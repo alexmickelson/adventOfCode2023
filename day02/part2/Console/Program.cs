@@ -1,5 +1,4 @@
-﻿
-using System.Globalization;
+﻿using System.Globalization;
 using System.Text.Json;
 
 // var input = File.ReadAllText("testInput.txt");
@@ -12,6 +11,7 @@ var colors = new string[]
 {
   "red", "green", "blue"
 };
+
 var actualCubes = new Dictionary<string, int>()
 {
   ["red"] = 12,
@@ -29,15 +29,7 @@ var minimumCubes = games
     }
   ).ToList();
 
-// minimumCubes.ForEach(m => {
-//   Console.WriteLine(JsonSerializer.Serialize(m));
-// });
-
 var gamePowers = minimumCubes.Select(m => m["green"] * m["red"] * m["blue"]).ToList();
 gamePowers.ForEach(Console.WriteLine);
 
 Console.WriteLine(gamePowers.Sum());
-// Console.WriteLine(JsonSerializer.Serialize(possibleGames));
-
-// Console.WriteLine(possibleGames.Count);
-// Console.WriteLine(possibleGames.Sum(g => g.Id));
