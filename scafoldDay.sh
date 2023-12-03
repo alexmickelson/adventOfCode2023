@@ -12,6 +12,8 @@ cd part1
   mkdir Test
   cd Test
     dotnet new nunit
+    dotnet add reference ../Console
+    dotnet add package fluenassertions
   cd ..
   dotnet new sln
   dotnet sln add Test
@@ -29,10 +31,10 @@ cd part2
   mkdir Test
   cd Test
     dotnet new nunit
+    dotnet add reference ../Console
+    dotnet add package fluenassertions
   cd ..
   dotnet new sln
   dotnet sln add Test
   dotnet sln add Console
-  touch testInput.txt
-  touch realInput.txt
 cd ..
