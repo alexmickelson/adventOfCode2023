@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+// var input = File.ReadAllText("testInput.txt");
+var input = File.ReadAllText("realInput.txt");
+
+var numbers = Schematics.GetPartNumbers(input);
+
+Console.WriteLine(numbers.Sum());
