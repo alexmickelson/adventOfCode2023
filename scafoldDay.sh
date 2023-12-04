@@ -13,7 +13,7 @@ cd part1
   cd Test
     dotnet new nunit
     dotnet add reference ../Console
-    dotnet add package fluenassertions
+    dotnet add package FluentAssertions
   cd ..
   dotnet new sln
   dotnet sln add Test
@@ -32,7 +32,7 @@ cd part2
   cd Test
     dotnet new nunit
     dotnet add reference ../Console
-    dotnet add package fluenassertions
+    dotnet add package FluentAssertions
   cd ..
   dotnet new sln
   dotnet sln add Test
