@@ -23,18 +23,5 @@ cd part1
 cd ..
 
 mkdir part2
-cd part2
-  mkdir Console
-  cd Console
-    dotnet new console
-  cd ..
-  mkdir Test
-  cd Test
-    dotnet new nunit
-    dotnet add reference ../Console
-    dotnet add package FluentAssertions
-  cd ..
-  dotnet new sln
-  dotnet sln add Test
-  dotnet sln add Console
 cd ..
+code part1
