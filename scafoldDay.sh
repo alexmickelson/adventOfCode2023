@@ -23,5 +23,5 @@ cd part1
 cd ..
 
 mkdir part2
-cd ..
+
 code part1
