@@ -10,6 +10,10 @@ var input = File.ReadAllLines("realInput.txt");
 //     .Select(r => HotSprings.GetArrangementCount(r)).Sum();
 
 
+ThreadPool.GetMaxThreads(out int workerthreads, out int completionPortthreads);
+System.Console.WriteLine(workerthreads);
+System.Console.WriteLine(completionPortthreads);
+
 var timer = new Stopwatch();
 timer.Start();
 var ways = new ConcurrentBag<int>();
